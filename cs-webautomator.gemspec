@@ -23,4 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'thor', '>= 0.19.1'
   spec.add_runtime_dependency 'i18n', '>= 0.6.11'
   spec.add_runtime_dependency 'gherkin', '2.12.2'
+
+  gem.post_install_message = <<-MESSAGE
+  !    The '_____' gem has been deprecated and has been replaced by magneton.
+  !    See: https://rubygems.org/gems/_____
+  !    And: https://github.com/concretesolutions/magneton
+  MESSAGE
 end
